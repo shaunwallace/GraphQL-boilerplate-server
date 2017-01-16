@@ -46,7 +46,9 @@
     "koa": "^2.0.0",
     "koa-bodyparser": "^3.2.0",
     "koa-router": "^7.0.1",
-    "winston": "^2.3.0"
+    "winston": "^2.3.0",
+    "webpack": "^2.2.0-rc.6",
+    "webpack-merge": "^2.4.0"
   },
   "devDependencies": {
     "eslint": "^3.13.1",
@@ -56,8 +58,6 @@
     "eslint-plugin-react": "^6.9.0",
     "graphiql": "^0.8.1",
     "nodemon": "^1.11.0",
-    "pre-commit": "^1.2.2",
-    "webpack": "^2.2.0-rc.6",
-    "webpack-merge": "^2.4.0"
+    "pre-commit": "^1.2.2"
   }
 }
