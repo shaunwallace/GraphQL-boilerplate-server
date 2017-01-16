@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "indent": ["error", 4],
+        "no-param-reassign": ["error", { "props": false }]
+    },
+    "env": {
+        "node": true,
+        "jest": true
+    },
+    "root": true
+}

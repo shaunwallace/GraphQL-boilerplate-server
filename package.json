@@ -1,0 +1,63 @@
+{
+  "name": "graphql-boilerplate-server",
+  "version": "0.0.1",
+  "description": "server application for graphql boilerplate",
+  "main": "./dist/server.js",
+  "engines": {
+    "npm": ">=3.0.0",
+    "node": "node >= 6.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "nodemon": "nodemon --watch ./src --exec webpack --env=dev",
+    "start": "webpack",
+    "build:dev": "webpack --env=dev --progress --profile --colors",
+    "build:dist": "webpack --env=prod --progress --profile --colors",
+    "lint": "eslint ./src/** -f table --color"
+  },
+  "pre-commit": [
+    "test",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaunwallace/GraphQL-boilerplate-server.git"
+  },
+  "keywords": [
+    "graphql",
+    "server"
+  ],
+  "author": "Shaun Wallace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaunwallace/GraphQL-boilerplate-server/issues"
+  },
+  "homepage": "https://github.com/shaunwallace/GraphQL-boilerplate-server#readme",
+  "dependencies": {
+    "graphql": "^0.8.2",
+    "graphql-server-koa": "^0.5.0",
+    "graphql-tools": "^0.9.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.0.1",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-preset-env": "^1.1.8",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "graphiql": "^0.8.1",
+    "jest": "^18.1.0",
+    "nodemon": "^1.11.0",
+    "pre-commit": "^1.2.2",
+    "webpack": "^2.2.0-rc.6",
+    "webpack-merge": "^2.4.0"
+  }
+}

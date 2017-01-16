@@ -90,5 +90,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * etc
 
 
-[travis-image]:https://travis-ci.org/shaunwallace/GraphQL-boilerplate.svg?branch=master
-[travis-url]: https://travis-ci.org/shaunwallace/GraphQL-boilerplate
+[travis-image]: https://travis-ci.org/shaunwallace/GraphQL-boilerplate-server.svg?branch=master
+[travis-url]: https://travis-ci.org/shaunwallace/GraphQL-boilerplate-server
