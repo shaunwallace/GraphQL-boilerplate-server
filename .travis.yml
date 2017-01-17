@@ -21,7 +21,7 @@ script:
 deploy:
   provider: heroku
   app: graphql-boilerplate-server
-  on: development
+  buildpack: nodejs
   skip_cleanup: true
   api_key:
-    secure: "${HEROKU_API_KEY}"
+    secure: tqXgVBbZFbVsHBkV9faD5uHqLkyVgXL4l6WmmgUO1fGq+Z7kpStJalQwHsy0YjmuBpGLXIBlbEyQbC9Bl8l3bA76SaXOZ99O1wI3yPeIoETtd+NebkOdDcycyKiYQT+4XAn98PBvIhITugl3J/B6ukEjOPzdwpY3Q4sSiwXblmNYX408TiJHED9l7j9oR1sjowRpHTLorpK9QdBEvj/HV+sPifwlSeyUrq8RtHfmdLfRicoRL3KdcI/YNX+L7bxtmLEHiR4dFp9XYIgfETxHj9yBzG1JF2HjPvy3+oiqbK76xry6I/vDCu0fHjwNRctw7HCsft5Ofz3zpEV7/KojnyjCYBDIoH03CCcpjToA0XfpnemRp870C8G5vfZ4x1CDFqPdh+0817c1jMnz5x3+hKmmm+6RM8yhPuErGQOd5T139zdq8yhOhQKN1MO8ewmL7A3tbj/bwS7lunhld7onL5MgSv8rZiAzQ+b8j0xeQGVRHzQKSjHZ0ip8DDUP7STCAKQFa+by+d32QqB5wU2Yx5lQWFfdzWY/rsbda7ZpnnFQGOO6pkmMZfKBjD9n6H9R5CxIVJc9tyBKLEe1LqUNQBNS/QS7le/fzQajDOy9I8HHVTDwbML6L37CQtOWJPoAbTqwq2L7cxIRrzEQ8m+bTtap8LNrMHPXezPWJ9JVO0Q=
