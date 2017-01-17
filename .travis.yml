@@ -21,6 +21,7 @@ script:
 deploy:
   provider: heroku
   app: graphql-boilerplate-server
+  on: development
   skip_cleanup: true
   api_key:
     secure: "${HEROKU_API_KEY}"
