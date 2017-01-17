@@ -1,7 +1,5 @@
 before_deploy:
 - test $TRAVIS_TEST_RESULT = 0
-after_success:
-- npm run build:dist
 cache:
   directories:
   - node_modules
@@ -20,8 +18,7 @@ script:
 - npm test
 deploy:
   provider: heroku
+  app: graphql-boilerplate-server
+  skip_cleanup: true
   api_key:
     secure: ${HEROKU_API_KEY}
-  app: GraphQL-boilerplate-server
-  on:
-    repo: shaunwallace/GraphQL-boilerplate-server
