@@ -20,8 +20,7 @@ script:
 - npm test
 deploy:
   provider: heroku
-  api_key:
-    secure: SPFkdloxnm/ym6DvuOJzJ+4Z3bthBohoUSuBhGV0MDkVMsyyDGdAI+mTzKVeXpS7BBSjomkYGSZd9nFNQjG/rQTJlSsc6GWwudU9wqbw6duafkKORXF8O4gvcr4dcjfgSsIw3PqAbOHiVNxf8hC3xmXNzG6mV6RZF8QsBw6+WEpu1iAeKhpWepHXik/9az3JdLJrBlBhrzNQOq7wBBb6/JtgSteMJuUv6QT+ucagFgbBadzMNbO3HSSBAIFEQ3qtD4/34v1pqyKGWglYIfRne2eL3rMJV0nGvThCbAOc3sMfzKBqBWLt/gVn+HeYoN8ICQNEiKYEcAG/R5iH04arlCdeHNPEu6ZbBeunb9mw3tjf+aIHYGXkDWh4hUUC+xSnQLj1ldZNfG/649GYsuKfJSiRCSp4AtEDFCAeIQmVVRkGJsBg5cw+MbOKcSp4zo6djpbByNjHLV0kGUvDhc26bIqm3Bbrd2kRZgB0NCuvciDvfdFpShWv9vFyT2Zj/OUl7eQScEU3yOi61Jkoa0NXWC2bWm4VSoR5r+lp1QxXCgF2l9GyX4jXaVzqwMVGi/H0fhRpGnqaAj4VRe21THUWpyZsOCs17gFsrlABVHzIOSJj2tj9/yL+f3+xBHmFsrjmzYMQhMFNePA4JBTbFKrlUYu06Qr78Eiu1q/BFb9eXbI=
+  api_key: ${HEROKU_API_KEY}
   app: GraphQL-boilerplate-server
   on:
     repo: shaunwallace/GraphQL-boilerplate-server
