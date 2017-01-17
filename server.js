@@ -3,7 +3,7 @@ const koaBody = require('koa-bodyparser');
 const winston = require('winston');
 const router = require('./src/routes');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = new Koa();
 
 app
