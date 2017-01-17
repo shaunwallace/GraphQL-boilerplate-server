@@ -12,6 +12,7 @@
     "start": "nodemon",
     "build:dev": "webpack --env=dev --progress",
     "build:dist": "webpack --env=prod --profile --colors",
+    "postinstall": "npm run build:dist",
     "lint": "eslint ./src/** -f table --color"
   },
   "pre-commit": [
