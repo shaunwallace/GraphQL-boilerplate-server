@@ -5,7 +5,7 @@ const commonConfig = require('./base');
 module.exports = env => webpackMerge(commonConfig(), {
     devtool: 'cheap-module-source-map',
     plugins: [
-        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(true),
         new webpack.LoaderOptionsPlugin({
             minimize: true,
             debug: false

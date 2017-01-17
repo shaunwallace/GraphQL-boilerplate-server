@@ -1,6 +1,7 @@
-import { graphqlKoa, graphiqlKoa } from 'graphql-server-koa';
-import Router from 'koa-router';
-import schema from './data/schema';
+const graphiqlKoa = require('graphql-server-koa').graphiqlKoa;
+const graphqlKoa = require('graphql-server-koa').graphqlKoa;
+const Router = require('koa-router');
+const schema = require('./data/schema');
 
 const router = new Router();
 
@@ -28,4 +29,4 @@ router.get('/user', async (ctx) => {
     return ctx;
 });
 
-export default router;
+module.exports = router;

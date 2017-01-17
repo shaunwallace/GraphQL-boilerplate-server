@@ -2,6 +2,9 @@ before_deploy:
 - test $TRAVIS_TEST_RESULT = 0
 after_success:
   - npm run build:dist
+cache:
+  directories:
+  - node_modules
 branches:
   only:
   - master

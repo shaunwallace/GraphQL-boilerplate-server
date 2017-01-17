@@ -1,5 +1,20 @@
 {
-  "events": {
-    "restart": "osascript -e 'display notification \"server restarted\" with title \"nodemon\"'"
-  }
+    "events": {
+        "restart": "osascript -e 'display notification \"server restarted\" with title \"nodemon\"'"
+    },
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "ext": "js json",
+    "verbose": true,
+    "execMap": {
+        "js": "node --harmony"
+    },
+    "watch": [
+        "src/"
+    ],
+    "ignore": [
+        "*.spec.js",
+        "node_modules/**"
+    ]
 }

@@ -2,18 +2,16 @@
   "name": "graphql-boilerplate-server",
   "version": "0.0.1",
   "description": "server application for graphql boilerplate",
-  "main": "./dist/server.js",
+  "main": "server.js",
   "engines": {
     "npm": ">=3.0.0",
     "node": "node >= 6.0.0"
   },
   "scripts": {
     "test": "jest",
-    "build": "webpack",
-    "nodemon": "nodemon --watch ./src --exec webpack --env=dev",
-    "start": "webpack",
-    "build:dev": "webpack --env=dev --progress --profile --colors",
-    "build:dist": "webpack --env=prod --progress --profile --colors",
+    "start": "nodemon",
+    "build:dev": "webpack --env=dev --progress",
+    "build:dist": "webpack --env=prod --profile --colors",
     "lint": "eslint ./src/** -f table --color"
   },
   "pre-commit": [
@@ -39,6 +37,7 @@
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-async-to-generator": "^6.16.0",
     "babel-preset-env": "^1.1.8",
+    "babili-webpack-plugin": "0.0.7",
     "graphql": "^0.8.2",
     "graphql-server-koa": "^0.5.0",
     "graphql-tools": "^0.9.0",
@@ -46,9 +45,9 @@
     "koa": "^2.0.0",
     "koa-bodyparser": "^3.2.0",
     "koa-router": "^7.0.1",
-    "winston": "^2.3.0",
     "webpack": "^2.2.0-rc.6",
-    "webpack-merge": "^2.4.0"
+    "webpack-merge": "^2.4.0",
+    "winston": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "^3.13.1",

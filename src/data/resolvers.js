@@ -16,4 +16,4 @@ const resolveFunctions = {
     },
 };
 
-export default resolveFunctions;
+module.exports = resolveFunctions;
